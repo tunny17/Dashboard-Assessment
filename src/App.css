@@ -16,37 +16,20 @@
 
 /* ---  nav component */
 .nav-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
   padding: 38px 32px;
   background: #1D1042;
 }
-
 
 .nav-1 {
   border-bottom: 1px solid rgb(237, 237, 237);
 }
 
+/* --- sub heading */
 .nav-1 p {
   width: 208px;
   height: 46px;
-  border: none;
   color: #fff;
   background: #45269C;
-  border-radius: 8px;
-  font-size: 16px;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  padding-left: 10%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 .nav-1 p::before {
   content: url(./assets/Nav/Lightning.svg);
@@ -55,50 +38,37 @@
   top: 25%;
 }
 
+/* --- nav */
 .nav-1 ul {
   margin-top: 5px;
   margin-left: 15%;
 }
 .nav-1 li {
   margin: 17% 0;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
 }
 
-
+/* --- second nav */
 .nav-2 {
   width: 100%;
   height: 100%;
   margin-top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .nav-2 ul li {
   opacity: 0.6;
-  margin-left: 15%;
   margin: 5% 0 10% 13%;
 }
+
+/* -- CTO button */
 .nav-2 button {
   width: 208px;
   height: 54px;
-  border: none;
   color: #fff;
   background: #703EFE;
-  border-radius: 8px;
-  cursor: pointer;
-  text-transform: uppercase;
-  position: relative;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
 }
 
-
-
-/* --- For the icons */
+/* --- For the nan icons */
 li {
   position: relative;
   cursor: pointer;
