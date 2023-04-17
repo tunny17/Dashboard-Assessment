@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Nav = () => {
   return (
-    <div className='nav-container'>
+    <div className='nav-container bg-orange-800'>
 
       <div className="nav-1">
         <p>Welcome Keerthi</p>
@@ -21,7 +21,7 @@ const Nav = () => {
           <li className='profile'>Profile</li>
           <li className='logout'>Logout</li>
         </ul>
-        <button>new project</button>
+        <button className='hover:bg-sky-700'>new project</button>
       </div>
 
     </div>
