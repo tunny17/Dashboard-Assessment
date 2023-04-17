@@ -1,0 +1,119 @@
+.app-container {
+  display: flex;
+  width: 100vw;
+}
+
+.nav-container {
+  width: 20%;
+  height: 100vh;
+}
+
+.body-container {
+  width: 80%;
+  height: 100vh;
+}
+
+
+/* ---  nav component */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 38px 32px;
+  background: #1D1042;
+}
+.nav-1 p {
+  width: 208px;
+  height: 46px;
+  border: none;
+  color: #fff;
+  background: #45269C;
+  border-radius: 8px;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-1 {
+  border-bottom: 1px solid rgb(237, 237, 237);
+}
+.nav-1 ul {
+  margin-top: 5px;
+  margin-left: 15%;
+}
+.nav-1 li {
+  margin: 17% 0;
+}
+
+
+.nav-2 {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav-2 button {
+  width: 208px;
+  height: 54px;
+  border: none;
+  color: #fff;
+  background: #703EFE;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav-2 ul li {
+  margin-left: 15%;
+  margin: 5% 0 10% 13%;
+}
+
+
+
+.nav-1 p::before {
+  content: url(./assets/Nav/Lightning.svg);
+  position: absolute;
+  left: 10%;
+}
+.nav-2 button::before {
+  content: url(./assets/Nav/Plus.svg);
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+li {
+  position: relative;
+}
+li::before {
+  content: url(./assets/Nav/Nav1.svg);
+  position: absolute;
+  top: 0;
+  left: -15%;
+}
+.settings::before {
+  content: url(./assets/Nav/Nav2.svg);
+}
+.activities::before {
+  content: url(./assets/Nav/Nav3.svg);
+}
+.users::before {
+  content: url(./assets/Nav/Nav4.svg);
+}
+.added::before {
+  content: url(./assets/Nav/Nav5.svg);
+}
+.affiliate::before {
+  content: url(./assets/Nav/Nav6.svg);
+}
+.profile::before {
+  content: url(./assets/Nav/Nav7.svg);
+}
+.logout::before {
+  content: url(./assets/Nav/Nav4.svg);
+}
