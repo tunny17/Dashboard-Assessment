@@ -5,6 +5,7 @@
 li {
   color: #fff;
   list-style-type: none;
+  cursor: pointer;
 }
 
 body {

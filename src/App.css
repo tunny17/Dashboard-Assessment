@@ -8,11 +8,6 @@
   height: 100vh;
 }
 
-.body-container {
-  width: 80%;
-  height: 100vh;
-}
-
 
 /* ---  nav component */
 .nav-container {
@@ -69,11 +64,10 @@
 }
 
 /* --- For the nan icons */
-li {
+.nav-container li {
   position: relative;
-  cursor: pointer;
 }
-li::before {
+.nav-container li::before {
   content: url(./assets/Nav/Nav1.svg);
   position: absolute;
   top: 0;
@@ -106,4 +100,80 @@ li::before {
   position: absolute;
   top: 30%;
   left: 10%;
+}
+
+
+
+/* ----- body component */
+.body-container {
+  width: 90%;
+  height: 100vh;
+  
+}
+
+.body-hero {
+  box-shadow: 0px 4px 148px rgba(0, 0, 0, 0.04);
+  padding-bottom: 3%;
+  padding: 3% 7%;
+}
+
+.sub-heading-text {
+  color: #B8B9BD;
+  margin-top: 3%;
+}
+.hero-heading button {
+  width: 160px;
+  height: 41px;
+
+  color: #fff;
+  background: #000000;
+  border-radius: 8px;
+  margin-top: 2%;
+}
+
+
+.hero-heading-nav {
+  margin-top: 6%;
+}
+.hero-heading-nav p {
+  font-size: 14px;
+  color: rgba(184, 185, 189, 1);
+  padding-left: 9%;
+  position: relative;
+}
+.hero-heading-nav p::before {
+  content: url(./assets/Hero-Nav/users.svg);
+  position: absolute;
+  top: -20%;
+  left: 0;
+}
+.hero-heading-nav ul {
+  width: 60%;
+}
+.hero-heading-nav li {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  color: rgba(125, 128, 136, 1);
+}
+.hero-heading-nav li:not(:last-child):before {
+  content: url(./assets/Hero-Nav/nav1.svg);
+  position: absolute;
+  left: -25px;
+  top: 7%;
+}
+.hero-heading-nav li:nth-child(2):before {
+  content: url(./assets/Hero-Nav/nav2.svg);
+}
+.hero-heading-nav li:nth-child(3):before {
+  content: url(./assets/Hero-Nav/nav2.svg);
+}
+.hero-heading-nav li:nth-child(4):before {
+  content: url(./assets/Hero-Nav/nav4.svg);
+}
+
+
+.body {
+  background: #FCFBFC;
 }
