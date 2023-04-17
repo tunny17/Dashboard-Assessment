@@ -1,5 +1,20 @@
 import React from 'react';
 import Plus from '../assets/Hero-Nav/Plus.svg';
+import cardImage from '../assets/CardImage.png';
+
+import { AiOutlineMore } from 'react-icons/ai';
+import { FiLink2 } from 'react-icons/fi';
+
+import List from '../assets/List.svg';
+import Comment from '../assets/Comment.svg';
+import User from '../assets/User.svg';
+
+
+import Box from '@mui/material/Box'
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 const Body = () => {
   return (
@@ -34,31 +49,42 @@ const Body = () => {
             To Do
           </div>
 
-          <figure>
-            <img src="" alt="" />
-            <figcaption></figcaption>
-            <caption></caption>
-            <span>
-              <p>Progress</p>
-              <p>2/10</p>
-            </span>
-            <span>
-              <p>7</p>
-              
-            </span>
-          </figure>
-        </div>
+          <Card sx={{ maxWidth: 266.67 }}>
 
-        <div className="progress">
-          <div className="heading">
-            Inprogress
-          </div>
-        </div>
+            <CardMedia component='img' height='194' image={cardImage} alt='test' />
 
-        <div className="completed">
-          <div className="heading">
-            Completed
-          </div>
+            <CardContent>
+
+              <Typography variant='subtitle1'>
+                <Box display='flex' alignItems='center' justifyContent='space-between'>
+                  <span style={{ fontWeight: 600 }}>Highfidelity Design</span> <AiOutlineMore style={{ color: '#B8B9BD' }}/>
+                </Box>
+              </Typography>
+
+              <Typography variant='subtitle2'>
+                <span style={{ fontSize: '14px', color: '#B8B9BD', fontWeight: 400 }}>Make clear design and color</span>
+              </Typography>
+
+              <Box display='flex' justifyContent='space-between' marginTop={1}>
+                <Box display='flex' alignItems='center'>
+                  <img src={List} alt="" style={{ marginRight: '5px', width: '100%' }}/> <span style={{ fontSize: '14px', fontWeight: 400, color: '#B8B9BD' }}>Progress</span>
+                </Box>
+                <span style={{ fontSize: '14px', fontWeight: 500 }}>2/10</span>
+              </Box>
+
+              <Box display='flex' alignItems='center' justifyContent='space-between' marginTop={1}>
+                <Box display='flex' alignItems='center'>
+                  <Box display='flex' alignItems='center' marginRight='15px'>
+                    <img src={Comment} alt="" style={{ marginRight: '4px', width: '16px' }} /> <span style={{ fontSize: '12px', fontWeight: 400, color: '#B8B9BD' }}>7</span>
+                  </Box>
+                  <Box display='flex' alignItems='center'>
+                    <FiLink2 style={{ color: '#B8B9BD', marginRight: '4px', width: '16px' }} /> <span style={{ fontSize: '12px', fontWeight: 400, color: '#B8B9BD' }}>2</span>
+                  </Box>
+                </Box>
+                <img src={User} alt="" />
+              </Box>
+            </CardContent>
+          </Card>
         </div>
         
       </div>
