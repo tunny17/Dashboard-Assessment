@@ -178,13 +178,6 @@
   background: #FCFBFC;
 }
 
-
-
-/* .MuiTypography-caption {
-  color: #000;
-  font-weight: 500;
-} */
-
 .MuiTypography-subtitle1 {
   font-family: 'Inter';
   font-style: normal;
@@ -194,40 +187,10 @@
 
 
 
-
-/* .MuiSlider-thumb {
-  background-color: orange;
-  box-shadow: none;
-  width: 0px;
-  height: 0px;
-}
-
-.MuiSlider-rail {
-  background-color: orange;
-  border: none;
-}
-
-
-
-.MuiSlider-rail {
-  background-color: green;
-}
-
-.MuiSlider-track {
-  background-color: red;
-  border: none;
-}
-
-.MuiSlider-thumb {
-  display: none;
-}
-.MuiSlider-thumb:is(:hover, .Mui-active) {
+.slider .MuiSlider-thumb {
   display: none;
 }
 
-.MuiSlider-colorPrimary {
-  color: #B8B9BD;
+.MuiSlider-rail {
+  color: #EBEBEB;
 }
-.MuiSlider-colorSecondary {
-  color: #000;
-} */

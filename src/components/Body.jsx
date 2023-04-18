@@ -16,6 +16,9 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
+import Slider from '@mui/material/Slider';
+
+
 const Body = () => {
   return (
     <div className='body-container'>
@@ -71,6 +74,8 @@ const Body = () => {
                 </Box>
                 <span style={{ fontSize: '14px', fontWeight: 500 }}>2/10</span>
               </Box>
+
+              <Slider defaultValue={50} aria-label="Disabled slider" className="slider"   sx={{ color: 'red', height: '8px' }} />
 
               <Box display='flex' alignItems='center' justifyContent='space-between' marginTop={1}>
                 <Box display='flex' alignItems='center'>
