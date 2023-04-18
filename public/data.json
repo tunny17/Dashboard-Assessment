@@ -1,0 +1,16 @@
+{
+    "todo": [
+        {
+            "id": "1",
+            "subtitle1": "Highfidelity Design",
+            "subtitle2": "Make clear design and color",
+            "image": "../src/assets/CardImages/CardImage1.png"
+        },
+        {
+            "id": "2",
+            "subtitle1": "Highfidelity Design",
+            "subtitle2": "Make clear design and color",
+            "image": "../src/assets/CardImages/CardImage2.png"
+        }
+    ]
+}
