@@ -4,13 +4,15 @@
             "id": "1",
             "subtitle1": "Highfidelity Design",
             "subtitle2": "Make clear design and color",
-            "image": "../src/assets/CardImages/CardImage1.png"
+            "image": "../src/assets/CardImages/CardImage1.png",
+            "color": "blue"
         },
         {
             "id": "2",
-            "subtitle1": "Highfidelity Design",
-            "subtitle2": "Make clear design and color",
-            "image": "../src/assets/CardImages/CardImage2.png"
+            "subtitle1": "Highfidelity",
+            "subtitle2": "Make clear ",
+            "image": "../src/assets/CardImages/CardImage2.png",
+            "color": "green"
         }
     ]
 }

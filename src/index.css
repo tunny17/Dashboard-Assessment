@@ -10,4 +10,5 @@ li {
 
 body {
   @apply font-sans;
+  overflow-x: hidden;
 }
