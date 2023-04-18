@@ -54,7 +54,7 @@ const Body = () => {
 
           <Card sx={{ maxWidth: 266.67 }}>
 
-            <CardMedia component='img' height='194' image={cardImage} alt='test' />
+            <CardMedia component='img' height='194' sx={{ padding: '5%' }} image={cardImage} alt='test' />
 
             <CardContent>
 
