@@ -16,9 +16,9 @@ import Typography from '@mui/material/Typography';
 
 import Slider from '@mui/material/Slider';
 
-const TodoCard = ({todo}) => {
+const ProgressCard = ({ progress }) => {
 
-    const { id, subtitle1, subtitle2, image, color, value } = todo;
+    const { id, subtitle1, subtitle2, image, color, value } = progress;
 
     return (
         <div>
@@ -45,7 +45,7 @@ const TodoCard = ({todo}) => {
                     <span style={{ fontSize: '14px', fontWeight: 500 }}>2/10</span>
                 </Box>
 
-                <Slider defaultValue={value} className="slider"   sx={{ color: {color}, height: '8px' }} />
+                <Slider defaultValue={value} aria-label="Disabled slider" className="slider"   sx={{ color: {color}, height: '8px' }} />
 
                 <Box display='flex' alignItems='center' justifyContent='space-between'>
                     <Box display='flex' alignItems='center'>
@@ -66,4 +66,4 @@ const TodoCard = ({todo}) => {
     )
 }
 
-export default TodoCard
+export default ProgressCard

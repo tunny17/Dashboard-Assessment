@@ -3,17 +3,24 @@ import axios from 'axios';
 import Plus from '../assets/Hero-Nav/Plus.svg';
 
 import TodoCard from './TodoCard';
+import CompletedCard from './CompletedCard';
+import ProgressCard from './ProgressCard';
 
 
 const Body = () => {
 
   const [todo, setTodo] = useState([]);
+  const [progress, setProgress] = useState([]);
+  const [completed, setCompleted] = useState([]);
+
 
   useEffect(() => {
     (async () => {
       try{
-        const { data: { todo } } = await axios.get('data.json');
+        const { data: { todo, progress, completed } } = await axios.get('data.json');
         setTodo(todo);
+        setProgress(progress);
+        setCompleted(completed);
         console.log(todo);
       }catch(error){
         console.log(error)
@@ -48,15 +55,41 @@ const Body = () => {
 
       </div>
 
-      <div className="body">
-        <div className="todo">
-          <div className="heading">
+      <div className="body flex flex-row justify-between">
+        <div className="card">
+          <div className="heading mb-3">
             To Do
           </div>
 
           <div className='flex flex-col'>
             {
-              todo.map((todo) => <TodoCard key={todo.id} todo={todo} /> )
+              todo?.map((todo) => <TodoCard key={todo.id} todo={todo} /> )
+            }
+          </div>
+
+        </div>
+
+        <div className="card">
+          <div className="heading inprogress mb-3">
+            Inprogress
+          </div>
+
+          <div className='flex flex-col'>
+            {
+              progress?.map((progress) => <ProgressCard key={progress.id} progress={progress} /> )
+            }
+          </div>
+
+        </div>
+
+        <div className="card">
+          <div className="heading completed mb-3">
+            Completed
+          </div>
+
+          <div className='flex flex-col'>
+            {
+              completed?.map((completed) => <CompletedCard key={completed.id} completed={completed} /> )
             }
           </div>
 
