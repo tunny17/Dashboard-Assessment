@@ -65,6 +65,7 @@ const Body = () => {
             {
               todo?.map((todo) => <TodoCard key={todo.id} todo={todo} /> )
             }
+            <button className='flex justify-center items-center'><img src={Plus} alt="" className='mr-3' /> Add Task</button>
           </div>
 
         </div>
@@ -78,6 +79,7 @@ const Body = () => {
             {
               progress?.map((progress) => <ProgressCard key={progress.id} progress={progress} /> )
             }
+            <button className='flex justify-center items-center'><img src={Plus} alt="" className='mr-3' /> Add Task</button>
           </div>
 
         </div>
@@ -91,6 +93,7 @@ const Body = () => {
             {
               completed?.map((completed) => <CompletedCard key={completed.id} completed={completed} /> )
             }
+            <button className='flex justify-center items-center'><img src={Plus} alt="" className='mr-3' /> Add Task</button>
           </div>
 
         </div>
