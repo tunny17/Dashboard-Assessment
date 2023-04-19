@@ -36,7 +36,7 @@
 .nav-1 p::before {
   content: url(./assets/Nav/Lightning.svg);
   position: absolute;
-  left: 11%;
+  left: 20px;
   top: 25%;
   width: auto;
 }
@@ -48,8 +48,7 @@
 }
 .nav-1 li {
   margin: 18% 0;
-  font-weight: 500;
-  font-size: 14px;
+  font-size: 0.88rem;
 }
 
 /* --- second nav */
@@ -60,6 +59,7 @@
 }
 .nav-2 ul li {
   opacity: 0.6;
+  font-size: 0.88rem;
   margin: 5% 0 13% 15%;
 }
 
@@ -79,7 +79,8 @@
 .nav-container li::before {
   position: absolute;
   top: 5%;
-  left: -15%;
+  left: -25px;
+  zoom: 100%;
 }
 .dashboard::before {
   content: url(./assets/Nav/Nav1.svg);
