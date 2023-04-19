@@ -11,6 +11,7 @@ li {
 body {
   @apply font-sans;
   overflow-x: hidden;
+  font-family: 'Inter';
 }
 
 body::-webkit-scrollbar {

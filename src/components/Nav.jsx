@@ -5,7 +5,7 @@ const Nav = () => {
     <div className='nav-container flex flex-col items-start'>
 
       <div className="nav-1">
-        <p className='flex justify-center items-center relative border-none rounded-lg pl-3'>Welcome Keerthi</p>
+        <p className='flex justify-center items-center relative border-none rounded-lg'>Welcome Keerthi</p>
         <ul>
           <li className='dashboard'>Dashboard</li>
           <li className='settings'>Settings</li>

@@ -1,14 +1,16 @@
+/* ---- body layout */
 .app-container {
   display: flex;
   width: 100vw;
-  height: 100vh;
 }
 
 .nav-container {
-  width: 18%;
-  height: 133%;
+  width: 19%;
 }
 
+.body-container {
+  width: 90%; 
+}
 
 /* ---  nav component */
 .nav-container {
@@ -17,30 +19,35 @@
 }
 
 .nav-1 {
+  width: 100%;
+  padding-bottom: 6%;
   border-bottom: 1px solid rgb(237, 237, 237);
 }
 
 /* --- sub heading */
 .nav-1 p {
-  width: 208px;
+  width: 100%;
   height: 46px;
   color: #fff;
+  padding-left: 10%;
   background: #45269C;
+  font-size: 1rem;
 }
 .nav-1 p::before {
   content: url(./assets/Nav/Lightning.svg);
   position: absolute;
-  left: 12%;
+  left: 11%;
   top: 25%;
+  width: auto;
 }
 
 /* --- nav */
 .nav-1 ul {
-  margin-top: 5px;
+  margin-top: 45px;
   margin-left: 15%;
 }
 .nav-1 li {
-  margin: 17% 0;
+  margin: 18% 0;
   font-weight: 500;
   font-size: 14px;
 }
@@ -49,30 +56,33 @@
 .nav-2 {
   width: 100%;
   height: 100%;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 .nav-2 ul li {
   opacity: 0.6;
-  margin: 5% 0 10% 13%;
+  margin: 5% 0 13% 15%;
 }
 
 /* -- CTO button */
 .nav-2 button {
-  width: 208px;
+  width: 100%;
   height: 54px;
   color: #fff;
   background: #703EFE;
+  padding-left: 10%;
 }
 
-/* --- For the nan icons */
+/* --- For the nav icons */
 .nav-container li {
   position: relative;
 }
 .nav-container li::before {
-  content: url(./assets/Nav/Nav1.svg);
   position: absolute;
-  top: 0;
+  top: 5%;
   left: -15%;
+}
+.dashboard::before {
+  content: url(./assets/Nav/Nav1.svg);
 }
 .settings::before {
   content: url(./assets/Nav/Nav2.svg);
@@ -100,17 +110,12 @@
   content: url(./assets/Nav/Plus.svg);
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 12%;
 }
 
 
 
 /* ----- body component */
-.body-container {
-  width: 90%;
-  height: 100vh;
-  
-}
 
 .body-hero {
   box-shadow: 0px 4px 148px rgba(0, 0, 0, 0.04);
@@ -120,7 +125,7 @@
 
 .sub-heading-text {
   color: #B8B9BD;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 .hero-heading button {
   width: 160px;
@@ -130,12 +135,14 @@
   background: #000000;
   border-radius: 8px;
   margin-top: 2%;
+  font-size: 14px;
 }
 
-
+/* the van of the heading of the hero */
 .hero-heading-nav {
   margin-top: 6%;
 }
+/* (8  members) */
 .hero-heading-nav p {
   font-size: 14px;
   color: rgba(184, 185, 189, 1);
@@ -148,6 +155,8 @@
   top: -20%;
   left: 0;
 }
+
+/* the right part of the hero (participant view, board view ...) */
 .hero-heading-nav ul {
   width: 60%;
 }
@@ -158,6 +167,7 @@
   position: relative;
   color: rgba(125, 128, 136, 1);
 }
+/* setting each of the icons */
 .hero-heading-nav li:not(:last-child):before {
   content: url(./assets/Hero-Nav/nav1.svg);
   position: absolute;
@@ -174,12 +184,12 @@
   content: url(./assets/Hero-Nav/nav4.svg);
 }
 
-
+/* the body */
 .body {
   background: #FCFBFC;
   padding: 3% 7%;
 }
-
+/* the first text in the card */
 .MuiTypography-subtitle1 {
   font-family: 'Inter';
   font-style: normal;
@@ -187,17 +197,18 @@
   color: #000000;
 }
 
+/* styling of the slider component */
 
-
+/* --hides the thumb */
 .slider .MuiSlider-thumb {
   display: none;
 }
-
+/* --sets the default color of the slider */
 .MuiSlider-rail {
   color: #EBEBEB;
 }
 
-
+/* the cards */ 
 
 .card .heading {
   display: flex;
@@ -234,6 +245,7 @@
   background: #000000;
   border-radius: 4px;
 }
+/* -- second and third heading numbers */
 .inprogress::after {
   content: '2';
 }
@@ -241,7 +253,7 @@
   content: '1';
 }
 
-
+/* the cta button */
 .card button {
   background: #F2F4F5;
   border: 1px dashed #D5D5D5;

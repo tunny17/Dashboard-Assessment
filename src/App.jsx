@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import './index.css';
-import Nav from './components/Nav';
-import Body from './components/Body';
+// imports both components
+import { Nav, Body } from './components'
 
 const App = () => {
   return (
