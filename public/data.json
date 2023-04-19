@@ -4,7 +4,7 @@
             "id": "1",
             "subtitle1": "Highfidelity Design",
             "subtitle2": "Make clear design and color",
-            "image": "/src/assets/CardImages/CardImage1.png",
+            "image": "/cardImages/CardImage1.png",
             "color": "#EBEBEB",
             "value": "0"
         },
@@ -21,7 +21,7 @@
             "id": "1",
             "subtitle1": "Highfidelity Design",
             "subtitle2": "Make clear design and color",
-            "image": "/src/assets/CardImages/CardImage2.png",
+            "image": "/cardImages/CardImage2.png",
             "color": "#FF5F37",
             "value": "70"
         }
@@ -38,7 +38,7 @@
             "id": "2",
             "subtitle1": "Highfidelity",
             "subtitle2": "Make clear ",
-            "image": "/src/assets/CardImages/CardImage3.png",
+            "image": "/cardImages/CardImage3.png",
             "color": "#8BC488",
             "value": "100"
         }
