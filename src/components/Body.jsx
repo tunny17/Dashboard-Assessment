@@ -19,7 +19,7 @@ const Body = () => {
   useEffect(() => {
     (async () => {
       try{
-        const { data: { todo, progress, completed } } = await axios.get('/public/data.json');
+        const { data: { todo, progress, completed } } = await axios.get('data.json');
 
         // stores destructured data into each state
         setTodo(todo);
