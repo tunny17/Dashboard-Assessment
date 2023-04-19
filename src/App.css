@@ -209,6 +209,10 @@
 }
 
 /* the cards */ 
+.card {
+  min-width: 266.67;
+  max-width: 480;
+}
 
 .card .heading {
   display: flex;

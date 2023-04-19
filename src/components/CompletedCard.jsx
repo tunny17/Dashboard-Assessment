@@ -15,7 +15,7 @@ const CompletedCard = ({ completed }) => {
 
     return (
         <div>
-            <Card sx={{ minWidth: 266.67, maxWidth: 480, width: "100%", maxHeight: 446, marginBottom: '6%' }}>
+            <Card sx={{ width: "100%", maxHeight: 446, marginBottom: '6%' }}>
 
                 {/* the image in the card */}
                 <CardMedia component='img' height='194' sx={{ padding: '5% 5% 0 5%' }} image={image} />
