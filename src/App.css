@@ -1,22 +1,25 @@
 /* ---- body layout */
-.app-container {
+/* .app-container {
   display: flex;
   width: 100vw;
-}
+  height: 100vh;
+} */
 
-.nav-container {
+/* .nav-container {
   width: 19%;
-}
+} */
 
 .body-container {
   width: 90%; 
+  height: 100%;
+  overflow-y: scroll;
 }
 
 /* ---  nav component */
-.nav-container {
-  padding: 38px 32px;
-  background: #1D1042;
-}
+/* .nav-container { */
+  /* padding: 38px 32px; */
+  /* background: #1D1042; */
+/* } */
 
 .nav-1 {
   width: 100%;
@@ -75,12 +78,14 @@
 /* --- For the nav icons */
 .nav-container li {
   position: relative;
+  
 }
 .nav-container li::before {
   position: absolute;
-  top: 5%;
-  left: -25px;
-  zoom: 100%;
+    top: 5%;
+    left: -25px;
+    zoom: 100%;
+  
 }
 .dashboard::before {
   content: url(./assets/Nav/Nav1.svg);
@@ -118,17 +123,17 @@
 
 /* ----- body component */
 
-.body-hero {
+/* .body-hero {
   box-shadow: 0px 4px 148px rgba(0, 0, 0, 0.04);
   padding-bottom: 3%;
   padding: 3% 7%;
-}
+} */
 
 .sub-heading-text {
   color: #B8B9BD;
   margin-top: 2%;
 }
-.hero-heading button {
+/* .hero-heading button{
   width: 160px;
   height: 41px;
 
@@ -137,7 +142,7 @@
   border-radius: 8px;
   margin-top: 2%;
   font-size: 14px;
-}
+} */
 
 /* the van of the heading of the hero */
 .hero-heading-nav {

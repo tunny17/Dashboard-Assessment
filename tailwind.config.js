@@ -5,7 +5,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      flex:{
+        '2':'0 0 18%',
+        '3': '1 0 0',
+      },
+      colors:{
+        'indigo-960': '#1D1042',
+
+      }
+    },
+    screens:{
+      xs: "480px",
+      sm: "768px",
+      md: "1024px",
+    }
   },
   plugins: [],
 }
